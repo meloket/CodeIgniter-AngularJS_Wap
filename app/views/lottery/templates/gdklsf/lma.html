@@ -1,0 +1,58 @@
+<ion-content class="bet-view" scroll="false">
+	<div class="sub-Navs" item-class="col-31">
+		<ion-scroll id="sub-navs" direction="x" scrollbar-x="false" delegate-handle="sub-navs" ng-init="selectFirstSub();">
+			<div class="row">
+				<div class="col sub-col col-31" ng-class="{navActive:selectSub.id==608401}">
+					<a class="item nav-item" ng-click="selectSubnav(1, $event);" data-id="608401" min-size="2" max-size="7">任选二</a>
+				</div>
+				
+				<div class="col sub-col col-31" ng-class="{navActive:selectSub.id==608402}">
+					<a class="item nav-item" ng-click="selectSubnav(2, $event);" data-id="608402" min-size="2" max-size="7">任选二组</a>
+				</div>
+				
+				<div class="col sub-col col-31" ng-class="{navActive:selectSub.id==608403}">
+					<a class="item nav-item" ng-click="selectSubnav(3, $event);" data-id="608403" min-size="3" max-size="7">任选三</a>
+				</div>
+				
+				<div class="col sub-col col-31" ng-class="{navActive:selectSub.id==608405}">
+					<a class="item nav-item" ng-click="selectSubnav(4, $event);" data-id="608405" min-size="4" max-size="5">任选四</a>
+				</div>
+				
+				<div class="col sub-col col-31" ng-class="{navActive:selectSub.id==608406}">
+					<a class="item nav-item" ng-click="selectSubnav(5, $event);" data-id="608406" min-size="5" max-size="5">任选五</a>
+				</div>
+			</div>
+		</ion-scroll>
+	
+		<div class="nav-content">
+			<ion-content class="tp40" scroll="false">
+				<div class="row text-center betLine ok">
+					<div class="col title-no line">赔率：{{shareData.odds.toString()}}</div>
+				</div>
+				<div class="specialBet">
+					<button class="btn btn-danger-outline sub-bet ok" data-id="1" value="0">1</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="2" value="0">2</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="3" value="0">3</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="4" value="0">4</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="5" value="0">5</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="6" value="0">6</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="7" value="0">7</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="8" value="0">8</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="9" value="0">9</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="10" value="0">10</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="11" value="0">11</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="12" value="0">12</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="13" value="0">13</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="14" value="0">14</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="15" value="0">15</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="16" value="0">16</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="17" value="0">17</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="18" value="0">18</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="19" value="0">19</button>
+					<button class="btn btn-danger-outline sub-bet ok" data-id="20" value="0">20</button>
+					
+				</div>
+			</ion-content>
+		</div>
+	</div>
+</ion-content>
